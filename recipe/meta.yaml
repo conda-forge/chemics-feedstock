@@ -1,7 +1,6 @@
 {% set name = "chemics" %}
 {% set version = "20.5" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -11,7 +10,7 @@ source:
   sha256: 81c691339431bdfb718fd46f30f8f734dd636b67bc1ab3a843eebffdebe784f9
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -50,3 +49,4 @@ about:
 extra:
   recipe-maintainers:
     - jan-janssen
+    - wigging

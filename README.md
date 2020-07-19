@@ -5,7 +5,7 @@ Home: https://github.com/chemics/chemics
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A Python package for chemical reactor engineering
 

@@ -1,5 +1,5 @@
 {% set name = "chemics" %}
-{% set version = "21.4" %}
+{% set version = "21.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6ebfdd1586f026e9892fa13128c91daf321738d788a60f5bd71028c66ce19ea7
+  sha256: b7b93d094ff1e43db22e82bc3f0bb4ab85a243a2fbb87f89f60cb147ce867a83
 
 build:
   number: 0

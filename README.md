@@ -152,5 +152,4 @@ Feedstock Maintainers
 =====================
 
 * [@jan-janssen](https://github.com/jan-janssen/)
-* [@wigging](https://github.com/wigging/)
 

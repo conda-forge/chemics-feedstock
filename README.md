@@ -7,7 +7,7 @@ Home: https://github.com/chemics/chemics
 
 Package license: MIT
 
-Summary: A Python package for chemical reactor engineering
+Summary: A Python package for chemical engineering
 
 Development: https://github.com/chemics/chemics
 

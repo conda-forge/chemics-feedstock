@@ -1,0 +1,52 @@
+schema_version: 1
+
+context:
+  name: chemics
+  version: "24.1"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/chemics-${{ version }}.tar.gz
+  sha256: 470828a662f2481190f38dc3eb83a1eb88968871433a98023a1dc891dd547d22
+
+build:
+  number: 2
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - hatchling
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - matplotlib-base
+    - numpy
+    - pandas
+    - scipy
+
+tests:
+  - python:
+      imports:
+        - chemics
+      pip_check: true
+      python_version: ${{ python_min }}
+
+about:
+  summary: A Python package for chemical engineering
+  license: MIT
+  license_file: LICENSE.md
+  description: |
+    The Chemics package is a collection of Python functions for conducting
+    calculations in the field of chemical and fluidization engineering.
+  homepage: https://github.com/chemics/chemics
+  repository: https://github.com/chemics/chemics
+  documentation: https://github.com/chemics/chemics
+
+extra:
+  recipe-maintainers:
+    - jan-janssen
